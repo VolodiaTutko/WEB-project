@@ -12,12 +12,12 @@ def write_matrix_to_file(matrix, file_path):
             row_str = ','.join(map(str, row))
             file.write(row_str + '\n')
 
-num_nodes = 10000
+num_nodes = 600
 min_weight = 0
-max_weight = 10
+max_weight = 100
 
 dijkstra_matrix = generate_dijkstra_matrix(num_nodes, min_weight, max_weight)
 
-file_path = "dijkstraMatrix.csv"  
+file_path = "dijkstraMatrix600.csv"  
 write_matrix_to_file(dijkstra_matrix, file_path)
 

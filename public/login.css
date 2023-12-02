@@ -56,11 +56,11 @@ section span
   z-index: 2;
   transition: 1.5s;
 }
-section span:hover 
+/* section span:hover 
 {
   background: #0f0;
   transition: 0s;
-}
+} */
 
 section .signin
 {

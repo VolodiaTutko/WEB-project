@@ -17,6 +17,7 @@ const taskSchema = new mongoose.Schema({
     type: Date,
     required: true
   },
+  graph: [[Number]],
   startV: {
     type: Number,
     required: true

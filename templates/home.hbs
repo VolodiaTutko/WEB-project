@@ -28,42 +28,7 @@
      <h2>Upload CSV File</h2>
    <input type="file" id="csvFileInput" accept=".csv" name="csvFile" required>
     </form>
-   <div id="tasks">
-    {{#each tasks}}
-    <div class="general-task">
-        <div class="task">
-            <h3>Task ID: {{taskID}}</h3>
-            <p>{{formatDateTime requestDateTime}}</p>
-            <p>Start: {{startV}}</p>
-            <p>End: {{endV}}</p>
-            <p>Min Distance: {{min_distance}}</p>
-        </div>
-        <div class="container-progress">
-            <progress id="execution" max="100" value="{{percents}}">{{percents}}%</progress>
-            <div class="percent">{{percents}}%</div>
-            {{!-- <button class="btn-stop">Stop</button> --}}
-            <button class="btn-cancel">Cancel</button>
-            <span class="marker">Actual</span>
-        </div>
-    </div>
-    {{/each}}
-     <div class="general-task">
-     <div class="task">
-      <h3>Task ID: - </h3>
-      <p>00:00:00 00.00.0000</p>
-       <p>Start: - </p>
-      <p>End: - </p>
-      <p>Min Distance: - </p>     
-    </div>
-     <div class="container-progress">
-     <progress id="execution" max="100" value="0">0%</progress>    
-     <div class="percent">0 %</div>
-     {{!-- <button class="btn-stop">Stop</button> --}}
-     <button class="btn-cancel">Cancel</button>
-      <span class="marker">None</span>
-     </div>
-     </div>      
-   </div>
+   <div id="tasks"></div>
 
     <button  id="dropdown-button">{{naming}}
          <div id="dropdown-content" class="hidden">
@@ -72,7 +37,7 @@
     </div>
     </button>
   </div>
-  <div class="tasks"></div>
 </section>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 </html>

@@ -353,6 +353,18 @@ progress{
   font-weight: bold;
   font-size: 18px;
 }
+
+.container-progress  .btn-delete{
+  height: 35px;
+  margin-left: 50px;
+  padding: 5px 10px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(185, 0, 0);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .general-task{
   border-color: white;
   border-width: 10px;
@@ -368,6 +380,16 @@ progress{
   background: none;
   text-transform: uppercase;
    height:35px ;
+}
+
+.container-progress  .btn-cancel:disabled {
+  background-color: rgb(53, 53, 53); 
+  color: rgb(95, 95, 95);
+}
+
+.container-progress  .btn-delete:disabled {
+  background-color: rgb(53, 53, 53); 
+  color: rgb(95, 95, 95);
 }
 
 
